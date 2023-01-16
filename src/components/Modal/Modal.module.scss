@@ -1,0 +1,41 @@
+.modal{
+    display: none;
+    position: absolute;
+    left: 380px;
+    top: 180px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(218, 215, 215);
+    border: 2px solid;
+}
+.open{
+    display: block;
+}
+.button{
+        position: absolute;
+    left: 200px;
+    top: 20px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+}
+.number{
+    padding-left: 220px;
+    padding-top: 30px;
+}
+.contanier{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0 ,0,0.5 );
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
