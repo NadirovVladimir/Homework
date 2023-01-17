@@ -44,7 +44,6 @@ export class Counter extends Component{
         <Aside isOpenAside={isOpenAside} />
         </div>
         <Button className = {styles.btn} click={this.handleToggleAside}   text={textAside} />
-        <Navigation />
 </div>
 <div>
             <Button click={this.handleToggleModal} text={textModal} />
