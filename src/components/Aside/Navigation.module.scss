@@ -1,0 +1,11 @@
+.link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    &:hover{
+        color: red;
+    }
+}
