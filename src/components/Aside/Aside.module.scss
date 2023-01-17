@@ -1,9 +1,14 @@
-.aside{
-display: block;
-width: 300px;
-height: 100vh;
-background-color: gray;
+.aside {
+    display: none;
+    width: 300px;
+    height: 100vh;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
 }
-.open{
+.open {
     display: block;
+    
 }
