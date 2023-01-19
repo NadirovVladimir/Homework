@@ -4,6 +4,7 @@ import Button from "../../Button/Button";
 import styles from '../../../App.module.scss'
 import classNames from "classnames/bind";
 import { Header } from "../../Header/Header";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles)
 export class Home extends Component{
@@ -19,11 +20,14 @@ export class Home extends Component{
         this.setState({isOpenAside: false,
           textAside: "Open Aside"})
       }
-      
+      deleteToken = () => {
+        localStorage.clear()
+      }
     render(){
         const { isOpenAside,  textAside} = this.state
         return<div>
         <Header/>
+        <button className={cx('btn')} onClick={this.deleteToken}><Link to='/login' className={cx('link')}>Logout</Link></button>
             <div className={styles.container}>
             <div onClick={this.closeAside} className={cx({})}>
         <Aside isOpenAside={isOpenAside} />
