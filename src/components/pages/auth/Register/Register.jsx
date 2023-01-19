@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import classNames from "classnames/bind";
 import styles from './Register.module.scss'
-import { json } from "react-router-dom";
+import { json, Link } from "react-router-dom";
 
 const cx = classNames.bind(styles)
 
@@ -36,6 +36,13 @@ export class Register extends Component {
                 name="password" 
                 placeholder="Create Password"/>
                 <button disabled = {!login || !password} dis type='submit' >Click</button>
+                <div className={cx('link')}>
+                <Link
+                to='/login'
+                >
+                Login
+                </Link>
+                </div>
             </form>
             </div>
         )
