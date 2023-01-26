@@ -1,14 +1,13 @@
 import React,{Component} from "react";
-import Modal from "../../Modal/Modal";
-import Button from "../../Button/Button";
-import styles from '../../../App.module.scss'
+import Modal from "../../components/Modal/Modal";
+import Button from "../../components/Button/Button";
+import styles from '../../App.module.scss'
 import classNames from "classnames/bind";
-import Aside from "../../Aside/Aside";
-import { Navigation } from "../../Aside/Navigation";
-import { Header } from "../../Header/Header";
-
+import Aside from "../../components/Aside/Aside";
+import { Header } from "../../components/Header/Header";
 const cx = classNames.bind(styles)
 export class Counter extends Component{
+
     state = {
         isOpenModal: false,
         bgc: false,
@@ -37,7 +36,7 @@ export class Counter extends Component{
       }
     render(){
         const {  bgc, textModal, isOpenModal,isOpenAside,  textAside} = this.state
-        return <div>
+        return <Counter>
 <Header/>
             <div className={styles.container}>
             <div onClick={this.closeAside} className={cx({})}>
@@ -51,6 +50,6 @@ export class Counter extends Component{
           <Modal isOpenModal={isOpenModal} />
           </div>
           </div>
-    </div>
+    </Counter>
     }
 }

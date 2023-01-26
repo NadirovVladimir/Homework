@@ -1,9 +1,9 @@
 import React,{Component} from "react";
-import Aside from "../../Aside/Aside";
-import Button from "../../Button/Button";
-import styles from '../../../App.module.scss'
+import Aside from "../../components/Aside/Aside";
+import Button from "../../components/Button/Button";
+import styles from '../../App.module.scss'
 import classNames from "classnames/bind";
-import { Header } from "../../Header/Header";
+import { Header } from "../../components/Header/Header";
 import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles)

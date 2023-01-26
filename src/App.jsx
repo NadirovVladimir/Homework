@@ -3,12 +3,12 @@ import styles from "./App.module.scss"
 import classNames from "classnames/bind";
 import "./index.scss"
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import { Counter } from "./components/pages/Counter/Counter";
-import { Home } from "./components/pages/Home/Home";
-import { Login } from "./components/pages/auth/Login/Login";
+import { Counter } from "./pages/Counter/Counter";
+import { Home } from "./pages/Home/Home";
+import  Login  from "./pages/auth/Login/Login";
 import { PrivateRoute } from "./components/routes/PrivateRoute";
-import { PubliceRoute } from "./components/routes/PublicRoute";
-import { Register } from "./components/pages/auth/Register/Register";
+import { PubliceRoute } from "./components/routes/PublicRoute"
+import  Register  from "./pages/auth/Register/Register";
 
 const cx = classNames.bind(styles)
 class App extends Component {
