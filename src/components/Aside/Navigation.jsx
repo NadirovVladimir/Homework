@@ -24,6 +24,12 @@ export class Navigation extends Component {
             >
                 Login
             </NavLink>
+            <NavLink
+            className = {styles.link}
+            to = "/users"
+            >
+                Users
+            </NavLink>
             </navigation>
         )
     }
