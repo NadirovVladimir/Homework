@@ -9,6 +9,7 @@ import  Login  from "./pages/auth/Login/Login";
 import { PrivateRoute } from "./components/routes/PrivateRoute";
 import { PubliceRoute } from "./components/routes/PublicRoute"
 import  Register  from "./pages/auth/Register/Register";
+import Users from "./pages/Users/Users";
 
 const cx = classNames.bind(styles)
 class App extends Component {
@@ -40,6 +41,14 @@ class App extends Component {
             <PubliceRoute>
               <Register />
             </PubliceRoute>
+          }
+          />
+          <Route 
+          path="/users"
+          element = {
+            <PrivateRoute>
+              <Users />
+            </PrivateRoute>
           }
           />
       </Routes>
