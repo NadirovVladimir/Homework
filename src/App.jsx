@@ -10,6 +10,8 @@ import { PrivateRoute } from "./components/routes/PrivateRoute";
 import { PubliceRoute } from "./components/routes/PublicRoute"
 import  Register  from "./pages/auth/Register/Register";
 import Users from "./pages/Users/Users";
+import { NotFound404 } from "./404/404";
+import User from "./pages/User/User"
 
 const cx = classNames.bind(styles)
 class App extends Component {
@@ -49,6 +51,20 @@ class App extends Component {
             <PrivateRoute>
               <Users />
             </PrivateRoute>
+          }
+          />
+          <Route 
+          path="*"
+          element = {
+            <PrivateRoute>
+              <NotFound404 />
+            </PrivateRoute>
+          }
+          />
+          <Route 
+          path="/user"
+          element = {
+              <User />
           }
           />
       </Routes>

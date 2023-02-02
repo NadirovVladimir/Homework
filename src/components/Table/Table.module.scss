@@ -9,3 +9,9 @@ tr,td,th{
 td,th{
     padding: 10px;
 }
+tr:hover{
+    background-color: gray;
+}
+.pointer{
+    cursor: pointer;
+}
